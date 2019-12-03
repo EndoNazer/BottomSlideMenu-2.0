@@ -15,6 +15,9 @@
 		A50355C0238E951C00FDAE12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50355BE238E951C00FDAE12 /* LaunchScreen.storyboard */; };
 		A50355CB238E951C00FDAE12 /* ModalControllersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50355CA238E951C00FDAE12 /* ModalControllersTests.swift */; };
 		A50355D6238E951C00FDAE12 /* ModalControllersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50355D5238E951C00FDAE12 /* ModalControllersUITests.swift */; };
+		A5401CD423912F90001DB8FD /* BottomSlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5401CD323912F90001DB8FD /* BottomSlideMenuViewController.swift */; };
+		A5401CD623912FB3001DB8FD /* BottomSlideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5401CD523912FB3001DB8FD /* BottomSlideMenuViewController.xib */; };
+		A5401CD8239131F2001DB8FD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5401CD7239131F2001DB8FD /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		A50355D1238E951C00FDAE12 /* ModalControllersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModalControllersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50355D5238E951C00FDAE12 /* ModalControllersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalControllersUITests.swift; sourceTree = "<group>"; };
 		A50355D7238E951C00FDAE12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5401CD323912F90001DB8FD /* BottomSlideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSlideMenuViewController.swift; sourceTree = "<group>"; };
+		A5401CD523912FB3001DB8FD /* BottomSlideMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSlideMenuViewController.xib; sourceTree = "<group>"; };
+		A5401CD7239131F2001DB8FD /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		A50355B2238E951900FDAE12 /* ModalControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A5401CD223912F5C001DB8FD /* VC */,
 				A50355B3238E951900FDAE12 /* AppDelegate.swift */,
 				A50355B5238E951A00FDAE12 /* SceneDelegate.swift */,
 				A50355B7238E951A00FDAE12 /* ViewController.swift */,
@@ -126,6 +133,16 @@
 				A50355D7238E951C00FDAE12 /* Info.plist */,
 			);
 			path = ModalControllersUITests;
+			sourceTree = "<group>";
+		};
+		A5401CD223912F5C001DB8FD /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				A5401CD323912F90001DB8FD /* BottomSlideMenuViewController.swift */,
+				A5401CD523912FB3001DB8FD /* BottomSlideMenuViewController.xib */,
+				A5401CD7239131F2001DB8FD /* Extension.swift */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5401CD623912FB3001DB8FD /* BottomSlideMenuViewController.xib in Resources */,
 				A50355C0238E951C00FDAE12 /* LaunchScreen.storyboard in Resources */,
 				A50355BD238E951C00FDAE12 /* Assets.xcassets in Resources */,
 				A50355BB238E951A00FDAE12 /* Main.storyboard in Resources */,
@@ -259,6 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5401CD8239131F2001DB8FD /* Extension.swift in Sources */,
+				A5401CD423912F90001DB8FD /* BottomSlideMenuViewController.swift in Sources */,
 				A50355B8238E951A00FDAE12 /* ViewController.swift in Sources */,
 				A50355B4238E951A00FDAE12 /* AppDelegate.swift in Sources */,
 				A50355B6238E951A00FDAE12 /* SceneDelegate.swift in Sources */,
