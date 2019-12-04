@@ -105,7 +105,7 @@
 		A50355B2238E951900FDAE12 /* ModalControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A5401CD223912F5C001DB8FD /* VC */,
+				A5401CD223912F5C001DB8FD /* BottomSlideMenu */,
 				A50355B3238E951900FDAE12 /* AppDelegate.swift */,
 				A50355B5238E951A00FDAE12 /* SceneDelegate.swift */,
 				A50355B7238E951A00FDAE12 /* ViewController.swift */,
@@ -135,14 +135,14 @@
 			path = ModalControllersUITests;
 			sourceTree = "<group>";
 		};
-		A5401CD223912F5C001DB8FD /* VC */ = {
+		A5401CD223912F5C001DB8FD /* BottomSlideMenu */ = {
 			isa = PBXGroup;
 			children = (
 				A5401CD323912F90001DB8FD /* BottomSlideMenuViewController.swift */,
 				A5401CD523912FB3001DB8FD /* BottomSlideMenuViewController.xib */,
 				A5401CD7239131F2001DB8FD /* Extension.swift */,
 			);
-			path = VC;
+			path = BottomSlideMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

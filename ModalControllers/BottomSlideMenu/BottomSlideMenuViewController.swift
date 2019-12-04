@@ -14,6 +14,7 @@ class BottomSlideMenuViewController: UIViewController {
     
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var mobileView: UIView!
+    @IBOutlet weak var touchArea: UIView!
     
     //MARK: - Private properties and enums
     
@@ -42,7 +43,7 @@ class BottomSlideMenuViewController: UIViewController {
         addPanRecognizer()
     }
     
-    //MARK: - Methods that determine the behavior of an element
+    //MARK: - Bottom slide menu engine
     
     private func configureMenu() {
         self.modalPresentationStyle = .overCurrentContext
@@ -51,7 +52,7 @@ class BottomSlideMenuViewController: UIViewController {
     
     private func addPanRecognizer() {
         let panRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panHandler))
-        self.mobileView.addGestureRecognizer(panRecognizer)
+        self.touchArea.addGestureRecognizer(panRecognizer)
     }
     
     @objc private func panHandler(_ gestureRecognizer: UIPanGestureRecognizer) {

@@ -11,6 +11,7 @@
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="aj2-Tv-efi"/>
                 <outlet property="mobileView" destination="sqo-EF-9Sd" id="mwS-3R-Q0z"/>
+                <outlet property="touchArea" destination="2Bd-ic-TVN" id="3pK-f2-1lM"/>
                 <outlet property="view" destination="iN0-l3-epB" id="u30-IM-pUV"/>
             </connections>
         </placeholder>
@@ -21,9 +22,37 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sqo-EF-9Sd">
                     <rect key="frame" x="0.0" y="450" width="414" height="950"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Bd-ic-TVN" userLabel="Touch Area">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Xg-AV-efY">
+                                    <rect key="frame" x="169.5" y="8" width="75" height="5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="5" id="6J8-pv-3YJ"/>
+                                        <constraint firstAttribute="width" constant="75" id="NQT-oP-WoA"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="1R2-z8-Omi"/>
+                                <constraint firstItem="0Xg-AV-efY" firstAttribute="centerX" secondItem="2Bd-ic-TVN" secondAttribute="centerX" id="QPU-u7-wtT"/>
+                                <constraint firstItem="0Xg-AV-efY" firstAttribute="top" secondItem="2Bd-ic-TVN" secondAttribute="top" constant="8" id="ytZ-ra-2Hn"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="2Bd-ic-TVN" firstAttribute="leading" secondItem="sqo-EF-9Sd" secondAttribute="leading" id="Jpg-eQ-VhL"/>
                         <constraint firstAttribute="height" constant="950" id="N7N-gK-XfC"/>
+                        <constraint firstAttribute="trailing" secondItem="2Bd-ic-TVN" secondAttribute="trailing" id="XAm-hA-KNp"/>
+                        <constraint firstItem="2Bd-ic-TVN" firstAttribute="top" secondItem="sqo-EF-9Sd" secondAttribute="top" id="dy5-NS-u2F"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
