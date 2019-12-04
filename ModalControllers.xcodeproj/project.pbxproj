@@ -17,7 +17,8 @@
 		A50355D6238E951C00FDAE12 /* ModalControllersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50355D5238E951C00FDAE12 /* ModalControllersUITests.swift */; };
 		A5401CD423912F90001DB8FD /* BottomSlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5401CD323912F90001DB8FD /* BottomSlideMenuViewController.swift */; };
 		A5401CD623912FB3001DB8FD /* BottomSlideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5401CD523912FB3001DB8FD /* BottomSlideMenuViewController.xib */; };
-		A5401CD8239131F2001DB8FD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5401CD7239131F2001DB8FD /* Extension.swift */; };
+		A5401CD8239131F2001DB8FD /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5401CD7239131F2001DB8FD /* UIView.swift */; };
+		A58BE9A12397DF64008FC44B /* BottomSlideMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58BE9A02397DF64008FC44B /* BottomSlideMenuPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +55,8 @@
 		A50355D7238E951C00FDAE12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5401CD323912F90001DB8FD /* BottomSlideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSlideMenuViewController.swift; sourceTree = "<group>"; };
 		A5401CD523912FB3001DB8FD /* BottomSlideMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSlideMenuViewController.xib; sourceTree = "<group>"; };
-		A5401CD7239131F2001DB8FD /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		A5401CD7239131F2001DB8FD /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A58BE9A02397DF64008FC44B /* BottomSlideMenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSlideMenuPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +140,10 @@
 		A5401CD223912F5C001DB8FD /* BottomSlideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				A5401CD323912F90001DB8FD /* BottomSlideMenuViewController.swift */,
 				A5401CD523912FB3001DB8FD /* BottomSlideMenuViewController.xib */,
-				A5401CD7239131F2001DB8FD /* Extension.swift */,
+				A5401CD323912F90001DB8FD /* BottomSlideMenuViewController.swift */,
+				A58BE9A02397DF64008FC44B /* BottomSlideMenuPresenter.swift */,
+				A5401CD7239131F2001DB8FD /* UIView.swift */,
 			);
 			path = BottomSlideMenu;
 			sourceTree = "<group>";
@@ -277,7 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5401CD8239131F2001DB8FD /* Extension.swift in Sources */,
+				A58BE9A12397DF64008FC44B /* BottomSlideMenuPresenter.swift in Sources */,
+				A5401CD8239131F2001DB8FD /* UIView.swift in Sources */,
 				A5401CD423912F90001DB8FD /* BottomSlideMenuViewController.swift in Sources */,
 				A50355B8238E951A00FDAE12 /* ViewController.swift in Sources */,
 				A50355B4238E951A00FDAE12 /* AppDelegate.swift in Sources */,

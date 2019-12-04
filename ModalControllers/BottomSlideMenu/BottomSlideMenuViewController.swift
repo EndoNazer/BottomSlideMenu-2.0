@@ -16,6 +16,10 @@ class BottomSlideMenuViewController: UIViewController {
     @IBOutlet weak var mobileView: UIView!
     @IBOutlet weak var touchArea: UIView!
     
+    //MARK: - Public properties
+    
+    lazy var presenter: BottomSlideMenuPresenter()
+    
     //MARK: - Private properties and enums
     
     private enum BottomSlideMenuPosition: CGFloat {
@@ -41,6 +45,7 @@ class BottomSlideMenuViewController: UIViewController {
         //Use if you want to get ios 13 style of modal view controllers
         //configureMenu()
         addPanRecognizer()
+        
     }
     
     //MARK: - Bottom slide menu engine
