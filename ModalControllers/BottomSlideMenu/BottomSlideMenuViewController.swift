@@ -18,7 +18,7 @@ class BottomSlideMenuViewController: UIViewController {
     
     //MARK: - Public properties
     
-    lazy var presenter: BottomSlideMenuPresenter()
+    lazy var presenter = BottomSlideMenuPresenter()
     
     //MARK: - Private properties and enums
     
