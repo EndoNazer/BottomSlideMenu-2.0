@@ -111,10 +111,10 @@ class BottomSlideMenuViewController: UIViewController {
     }
     
     private func checkVelocityAndCalculatePosition(gestureRecognizer: UIPanGestureRecognizer) -> BottomSlideMenuPosition {
-        let yVelocity = gestureRecognizer.velocity(in: self.view).y.magnitude
+        let velocityY = gestureRecognizer.velocity(in: self.view).y.magnitude
         var nextPosition: BottomSlideMenuPosition = .hidden
         
-        if yVelocity < 30 {
+        if velocityY < 30 {
             nextPosition = calculateNextPosition(gestureRecognizer: gestureRecognizer, accordingToDirection: false)
         } else {
             nextPosition = calculateNextPosition(gestureRecognizer: gestureRecognizer, accordingToDirection: true)
